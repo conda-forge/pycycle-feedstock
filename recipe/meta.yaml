@@ -1,13 +1,13 @@
 {% set name = "pyCycle" %}
-{% set version = "4.2.1" %}
-{% set sha256 = "d7f7e7554d7b64e2d12a015315b43b490365e593932edf475aad46a999f4f4e3" %}
+{% set version = "4.3.0" %}
+{% set sha256 = "5cb00857d9074a9d35e4a3489823e35fe2900555571b4c50ede0d550db9d28ca" %}
 
 package:
   name: {{ name | lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/o/om-pycycle/om-pycycle-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/o/om-pycycle/om_pycycle-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
