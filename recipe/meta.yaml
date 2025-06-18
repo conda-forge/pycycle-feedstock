@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/o/om_pycycle/om_pycycle-4.3.0.tar.gz
+  url: https://pypi.org/packages/source/o/om_pycycle/om_pycycle-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
