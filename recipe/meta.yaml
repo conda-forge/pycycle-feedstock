@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/o/om-pycycle/om-pycycle-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/o/pycycle/pycycle-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -17,8 +17,9 @@ build:
 
 requirements:
   host:
-    - pip
     - python {{ python_min }}
+    - pip
+    - setuptools
   run:
     - openmdao >=3.10.0
     - python >={{ python_min }}
@@ -49,4 +50,5 @@ about:
 
 extra:
   recipe-maintainers:
-    - sanbales
+    - robfalck
+    - swryan
