@@ -1,6 +1,6 @@
 {% set name = "pyCycle" %}
-{% set version = "4.3.0" %}
-{% set sha256 = "5cb00857d9074a9d35e4a3489823e35fe2900555571b4c50ede0d550db9d28ca" %}
+{% set version = "4.4.0" %}
+{% set sha256 = "a10aae9e5ca01e317237f41a0f657d977ea9bf8dd938a1289fdfca9919adcf9a" %}
 
 package:
   name: {{ name | lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
